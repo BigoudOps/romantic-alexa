@@ -1,3 +1,20 @@
+![GitHub: stars](https://flat.badgen.net/github/stars/BigoudOps/romantic-alexa?params)
+[![github-top-lang](https://img.shields.io/github/languages/top/BigoudOps/romantic-alexa?style=social&logo=github)](https://github.com/BigoudOps/romantic-alexa)
+
+- [![Twitter](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2FBigoudOps%2Fromantic-alexa)]()
+- [![Twitter](https://img.shields.io/twitter/follow/tinymontana92)](https://twitter.com/tinymontana92)
+
+- [![Rejoignez moi Discord](https://img.shields.io/static/v1.svg?label=Join%20our%20Discord%20channel&message=🎆&color=7289DA&logo=discord&logoColor=white&labelColor=2C2F33)](https://discordapp.com/invite/EaK7DNsqwB) 
+
+- [![Reddit profile](https://img.shields.io/reddit/subreddit-subscribers/apdm?style=social)](https://www.reddit.com/r/apdm)
+
+- [![github-top-lang](https://img.shields.io/github/languages/top/BigoudOps/BigoudOps?style=social&logo=github)](https://github.com/BigoudOps/BigoudOps)
+
+***This is a version compatible with Microsoft Windows:registered:***
+for version with Linux system check on my repository at Gitlab.com :arrow_right: https://gitlab.com/BigoudOps/gaston.voice-assistant  
+name of assistant change and i add a sort files by theires extensions  
+I use the API of ![openwheathermap](https://openweathermap.org/) for the wheater, so if you want to use this you need to add a api inside function meteo
+if you see something missing please let me know :wink:
 # romantic-alexa
 ## Build an Artificial Assistant
 

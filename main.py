@@ -4,8 +4,10 @@ import pywhatkit
 import datetime
 import wikipedia
 import pyjokes
+import requests
 import os
 import psutil
+import time
 
 listener = sr.Recognizer()
 engine = pyttsx3.init()
@@ -58,18 +60,22 @@ def tanks():
 
 def period():
     currentH = int(datetime.datetime.now().hour)
-    if currentH >= 0 and currentH < 12:
-        talk('Bonjour!')
-
-    if currentH >= 12 and currentH < 18:
-        talk('Bonne après-midi!')
-
-    if currentH >= 18 and currentH != 0:
-        talk('Bonsoir!')
     year = int(datetime.datetime.now().year)
     month = int(datetime.datetime.now().month)
     date = int(datetime.datetime.now().day)
     time = datetime.datetime.now().strftime('%H:%M')
+    if currentH >= 0 and currentH < 12:
+        talk('Bonjour!')
+        talk("Je m'appelle Alexa , je suis la pour vous aider au quotidien")
+        print(time + (" ") + str(date) + (" ") + str(month) + (" ") + str(year))
+
+    if currentH >= 12 and currentH < 18:
+        talk('Bonne après-midi!')
+        talk("Je m'appelle Alexa , je suis la pour vous aider au quotidien")    
+        print(time + (" ") + str(date) + (" ") + str(month) + (" ") + str(year))
+
+    if currentH >= 18 and currentH != 0:
+        talk('Bonsoir!')
     talk("Je m'appelle Alexa , je suis la pour vous aider au quotidien")
     print(time + (" ") + str(date) + ("/") + str(month) + '/' + str(year))
 
@@ -85,7 +91,7 @@ def take_command():
             if 'alexa' in command:
                 command = command.replace('alexa', '')
                 print(command)
-    except:
+    except Exception:
         pass
     return command
 
@@ -120,5 +126,15 @@ def run_alexa():
 
 if __name__ == '__main__':
     period()
+    year = int(datetime.datetime.now().year)
+    month = int(datetime.datetime.now().month)
+    date = int(datetime.datetime.now().day)
+    time = datetime.datetime.now().strftime('%H:%M')
+
+    talk("nous sommes le " + str(date) + "jour" + "du mois de " + str(month) + "de l'année " + str(year))
+    talk("il est actuellement  " + time)
+    print(time + (" ") + str(date) + ("/") + str(month) + '/' + str(year))
+    print("Alexa is ready")
+    print(os.getcwd(), os.getpid())
     while True:
         run_alexa()
